@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+<script type="module" async>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  const render = async () => {
+    document.querySelectorAll('code.language-mermaid').forEach(code => {
+      const wrapper = code.closest('.listingblock');
+      const newPre = document.createElement('pre');
+      newPre.className = 'mermaid';
+      newPre.textContent = code.textContent;
+      wrapper.replaceWith(newPre);
+    });
+    await mermaid.run();
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+</script>

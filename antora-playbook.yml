@@ -1,0 +1,51 @@
+site:
+  title: Evolveum Docs
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://docs.evolveum.com
+  start_page: evolveum-docs::index.adoc
+  robots: allow
+
+content:
+  sources:
+    - url: https://github.com/vladflore/evolveum-docs.git
+    # - url: ../evolveum-docs
+      branches: HEAD
+      start_path: docs
+      edit_url: true
+      # worktrees: true
+    - url: https://github.com/vladflore/evolveum-midpoint.git
+    # - url: ../evolveum-midpoint    
+      branches: [Dev, v4.10, v4.9, v4.8, v4.7_and_earlier]
+      start_path: docs
+      edit_url: true
+      # worktrees: true      
+
+asciidoc:
+  attributes:
+    icons: font
+    experimental: ""
+    source-highlighter: highlight.js
+    hide-uri-scheme: ""
+    idprefix: ""
+    idseparator: "-"
+    page-pagination: ""
+    # figure-caption: Figure
+    # sectnums: false
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+urls:
+  latest_version_segment: ""
+
+antora:
+  extensions:
+    - ./lib/unified-nav-extension.js
+
+runtime:
+  log:
+    level: info
+    failure_level: fatal

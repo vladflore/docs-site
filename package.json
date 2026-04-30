@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "npx antora --fetch antora-playbook.yml",
+    "serve": "http-server build/site -p 8080 -c-1",
+    "build:serve": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "antora": "3.1.14",
+    "http-server": "^14.1.1"
+  }
+}
