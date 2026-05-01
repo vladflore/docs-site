@@ -45,6 +45,7 @@ urls:
 antora:
   extensions:
     - ./lib/unified-nav-extension.js
+    - ./lib/htaccess-extension.js
 
 runtime:
   log:
