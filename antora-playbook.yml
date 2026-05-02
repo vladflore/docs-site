@@ -39,7 +39,6 @@ ui:
   supplemental_files: ./supplemental-ui
 
 urls:
-  latest_version_segment: ""
   html_extension_style: drop
 
 antora:
