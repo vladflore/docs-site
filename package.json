@@ -4,10 +4,11 @@
     "serve": "http-server build/site -p 8080 -c-1",
     "docker:build": "docker build --no-cache -t docs-site .",
     "docker:run": "docker run --rm -p 8080:80 docs-site",
-    "docker": "npm run docker:build && npm run docker:run"
+    "docker": "npm run docker:build && npm run docker:run",
+    "tag": "git tag -a $npm_config_tag -m \"$npm_config_message\" && git push origin $npm_config_tag"
   },
   "devDependencies": {
-    "antora": "3.1.14",
+    "antora": "3.2.0-alpha.11",
     "http-server": "^14.1.1"
   }
 }
