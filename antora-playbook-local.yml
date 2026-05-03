@@ -6,14 +6,16 @@ site:
 
 content:
   sources:
-    - url: https://github.com/vladflore/evolveum-docs.git
+    - url: ../evolveum-docs
       branches: HEAD
       start_path: docs
       edit_url: true
-    - url: https://github.com/vladflore/evolveum-midpoint.git
+      worktrees: true
+    - url: ../evolveum-midpoint
       branches: [Dev, v4.10, v4.9, v4.8, v4.7_and_earlier]
       start_path: docs
       edit_url: true
+      worktrees: true
 
 asciidoc:
   attributes:
