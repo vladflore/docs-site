@@ -1,0 +1,58 @@
+.doc .admonitionblock > table {
+  table-layout: auto;
+  position: static;
+}
+
+.doc .admonitionblock td.icon {
+  font-size: 1.75rem;
+  text-align: center;
+  width: 4rem;
+  color: #000;
+  cursor: default;
+  position: static;
+  left: auto;
+  top: auto;
+  -webkit-transform: none;
+  transform: none;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.doc .admonitionblock td.icon i {
+  display: inline;
+  background-color: transparent;
+  color: inherit;
+  border-radius: 0;
+  height: auto;
+  padding: 0;
+  width: auto;
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc .admonitionblock td.icon i::after {
+  content: none;
+}
+
+.doc .admonitionblock td.icon i.icon-note,
+.doc .admonitionblock td.icon i.icon-tip,
+.doc .admonitionblock td.icon i.icon-warning,
+.doc .admonitionblock td.icon i.icon-caution,
+.doc .admonitionblock td.icon i.icon-important {
+  background-color: transparent;
+  color: #000;
+}
+
+.doc .admonitionblock td.icon i.icon-note::before    { content: "\f05a"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.doc .admonitionblock td.icon i.icon-tip::before     { content: "\f0eb"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.doc .admonitionblock td.icon i.icon-warning::before { content: "\f071"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.doc .admonitionblock td.icon i.icon-caution::before { content: "\f06d"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.doc .admonitionblock td.icon i.icon-important::before { content: "\f06a"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+
+.doc .admonitionblock td.content {
+  padding: 1rem;
+  background: none;
+  border-left: 1px solid #dddddd;
+}

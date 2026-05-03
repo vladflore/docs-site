@@ -3,74 +3,8 @@
 <link rel="icon" type="image/png" href="{{uiRootPath}}/img/favicon16.png" sizes="16x16">
 <link rel="shortcut icon" href="{{uiRootPath}}/img/favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
-<style>
-/* ── Evolveum footer ─────────────────────────────────────────────────────── */
-.ev-footer {
-  color: #828282;
-  background-color: transparent;
-  margin-top: 2rem;
-  border-top: 1px solid rgba(130,130,130,.1);
-}
-.ev-footer-inner {
-  padding: 1.25rem 1.5rem 0.5rem;
-}
-.ev-footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding-bottom: 1rem;
-}
-.ev-footer-col-brand  { flex: 0 0 30%; }
-.ev-footer-col-site,
-.ev-footer-col-evolveum { flex: 0 0 14%; }
-.ev-footer-col-social { flex: 1; min-width: 160px; }
-.ev-footer-logo {
-  display: block;
-  width: 170px;
-  height: auto;
-  filter: saturate(0%) opacity(60%);
-  margin-bottom: .75rem;
-}
-.ev-footer-description {
-  color: rgba(130,130,130,.7);
-  font-size: .875rem;
-  margin: 0;
-}
-.ev-footer-heading {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-.ev-footer-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.ev-footer-list li { margin-bottom: .35rem; }
-.ev-footer a {
-  color: rgba(130,130,130,.7);
-  text-decoration: none;
-}
-.ev-footer a:hover { color: #828282; text-decoration: underline; }
-.ev-footer-social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .75rem;
-  align-items: center;
-}
-.ev-footer-social-links a.social { font-size: 1.25rem; }
-.ev-footer-copyright {
-  padding: .5rem 0 .75rem;
-  border-top: 1px solid rgba(130,130,130,.1);
-  text-align: center;
-  font-size: .85rem;
-}
-@media (max-width: 768px) {
-  .ev-footer-col-brand,
-  .ev-footer-col-site,
-  .ev-footer-col-evolveum,
-  .ev-footer-col-social { flex: 0 0 100%; }
-}
-</style>
+<link rel="stylesheet" href="{{uiRootPath}}/css/admonitions.css">
+<link rel="stylesheet" href="{{uiRootPath}}/css/footer.css">
 <script type="module" async>
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: false });
