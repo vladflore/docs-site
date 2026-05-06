@@ -16,6 +16,8 @@ content:
       edit_url: true
 
 asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
   attributes:
     icons: font
     experimental: ""
